@@ -3,8 +3,8 @@
 ParsBERT is a monolingual language model based on Google’s BERT architecture with the same configurations as BERT-Base. 
 
 Paper presenting ParsBERT: [arXiv:2005.12515](https://arxiv.org/abs/2005.12515)
-All the models (downstream tasks) are uncased and trained with whole word masking. (coming soon stay tuned)
 
+All the models (downstream tasks) are uncased and trained with whole word masking. (coming soon stay tuned)
 
 
 ---
