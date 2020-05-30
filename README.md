@@ -50,7 +50,7 @@ The following table summarizes the F1 score obtained by ParsBERT as compared to 
 | Dataset | ParsBERT |  mBERT   | MorphoBERT |  Beheshti-NER  |  LSTM-CRF  |  Rule-Based CRF  |  BiLSTM-CRF  |
 |:-------:|:--------:|:--------:|:----------:|:--------------:|:----------:|:----------------:|:------------:|
 |  PEYMA  |   93.10* |   86.64  |      -     |      90.59     |      -     |       84.00      |       -      |
-|  ARMAN  |   98.79* |   98.75  |    89.9    |      84.03     |    86.55   |         -        |     77.45    |
+|  ARMAN  |   98.79* |   95.89  |    89.9    |      84.03     |    86.55   |         -        |     77.45    |
 
 
 **If you tested ParsBERT on a public dataset and you want to add your results to the table above, open a pull request or contact us. Also make sure to have your code available online so we can add it as a reference**
