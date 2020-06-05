@@ -16,6 +16,11 @@ This model is pre-trained on a large Persian corpus with various writing styles 
 As a part of ParsBERT methodology, an extensive pre-processing combining POS tagging and WordPiece segmentation was carried out to bring the corpus into a proper format. This process produces more than 40M true sentences. 
 
 
+[![ParsBERT Demo](https://img.youtube.com/vi/Fyirkq668PE/0.jpg)](https://www.youtube.com/watch?v=Fyirkq668PE)
+
+[ParsBERT Playground](http://lab.hooshvare.com/)
+
+
 ## Evaluation
 
 ParsBERT is evaluated on three NLP downstream tasks: Sentiment Analysis (SA), Text Classification, and Named Entity Recognition (NER). For this matter and due to insufficient resources, two large datasets for SA and two for text classification were manually composed, which are available for public use and benchmarking. ParsBERT outperformed all other language models, including multilingual BERT and other hybrid deep learning models for all tasks, improving the state-of-the-art performance in Persian language modeling.
