@@ -16,7 +16,7 @@ This model is pre-trained on a large Persian corpus with various writing styles 
 As a part of ParsBERT methodology, an extensive pre-processing combining POS tagging and WordPiece segmentation was carried out to bring the corpus into a proper format. This process produces more than 40M true sentences. 
 
 
-[![ParsBERT Demo](https://img.youtube.com/vi/Fyirkq668PE/0.jpg)](https://www.youtube.com/watch?v=Fyirkq668PE)
+[![ParsBERT Demo](/assets/parsbert-playground.png)](https://www.youtube.com/watch?v=Fyirkq668PE)
 
 [ParsBERT Playground](http://lab.hooshvare.com/)
 
