@@ -91,7 +91,11 @@ model = AutoModel.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
 
 ## NLP Tasks Tutorial 
 
-Coming soon stay tuned
+- [Named Entity Recognition](https://github.com/hooshvare/parsbert-ner)
+- Sentiment (soon).
+- Text Classification (soon).
+- Topic modeling (soon).
+- Question Answering (soon).
 
 
 ## Cite 
