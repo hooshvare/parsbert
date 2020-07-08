@@ -6,7 +6,7 @@ Paper presenting ParsBERT: [arXiv:2005.12515](https://arxiv.org/abs/2005.12515)
 
 All the models (downstream tasks) are uncased and trained with whole word masking. (coming soon stay tuned)
 
-
+**These models are all released under the same license as the source code (Apache 2.0).**
 ---
 
 ## Introduction
