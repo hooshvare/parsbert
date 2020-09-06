@@ -79,7 +79,7 @@ next_sentence_loss = 6.534152e-05
 ### Base Config
 
 #### ParsBERT v2.0 Model
-- [HooshvareLab/albert-face-base-v2](https://huggingface.co/HooshvareLab/bert-fa-base-uncased) 
+- [HooshvareLab/bert-fa-base-uncased](https://huggingface.co/HooshvareLab/bert-fa-base-uncased) 
 
 #### ParsBERT v2.0 Sentiment Analysis
 - [HooshvareLab/bert-fa-base-uncased-sentiment-digikala](https://huggingface.co/HooshvareLab/bert-fa-base-uncased-sentiment-digikala) 
