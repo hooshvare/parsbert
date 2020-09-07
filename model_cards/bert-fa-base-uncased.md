@@ -10,8 +10,8 @@ license: apache-2.0
 # ParsBERT (v2.0)
 A Transformer-based Model for Persian Language Understanding
 
-We reconstructed the vocabulary and fine-tuned the ParsBERT v1.1 on the new Persian corpora in order to provide some functionalities for using ParsBERT in other scopes! Objective goals during training are as below (after 300K steps).
 
+We reconstructed the vocabulary and fine-tuned the ParsBERT v1.1 on the new Persian corpora in order to provide some functionalities for using ParsBERT in other scopes!
 Please follow the [ParsBERT](https://github.com/hooshvare/parsbert) repo for the latest information about previous and current models.
 
 ## Introduction
