@@ -18,6 +18,12 @@ Paper presenting ParsBERT: [arXiv:2005.12515](https://arxiv.org/abs/2005.12515)
   - [How to use](#how-to-use)
     - [TensorFlow 2.0](#tensorflow-20)
     - [Pytorch](#pytorch)
+  - [Derivative models](#derivative-models)
+    - [Base Config](#base-config)
+      - [ParsBERT v2.0 Model](#parsbert-v20-model)
+      - [ParsBERT v2.0 Sentiment Analysis](#parsbert-v20-sentiment-analysis)
+      - [ParsBERT v2.0 Text Classification](#parsbert-v20-text-classification)
+      - [ParsBERT v2.0 NER](#parsbert-v20-ner)
   - [NLP Tasks Tutorial  :hugs:](#nlp-tasks-tutorial-hugs)
   - [Cite](#cite)
   - [Acknowledgments](#acknowledgments)
@@ -53,6 +59,7 @@ As a part of ParsBERT methodology, an extensive pre-processing combining POS tag
 
 [![ParsBERT Demo](/assets/parsbert-playground.png)](https://www.youtube.com/watch?v=Fyirkq668PE)
 
+[ParsBERT Playground](http://lab.hooshvare.com/)
 
 
 ## Evaluation
@@ -72,6 +79,7 @@ The following table summarizes the F1 score obtained by ParsBERT as compared to 
 |  SnappFood User Comments |    87.98    |    88.12*   | 87.87 |       -       |
 |  SentiPers (Multi Class) |    71.31*   |    71.11    |   -   |     69.33     |
 | SentiPers (Binary Class) |    92.42*   |    92.13    |   -   |     91.98     |
+
 
 
 ### Text Classification (TC) task
@@ -136,6 +144,27 @@ config = AutoConfig.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
 tokenizer = AutoTokenizer.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
 model = AutoModel.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
 ```
+
+## Derivative models
+
+### Base Config
+
+#### ParsBERT v2.0 Model
+- [HooshvareLab/bert-fa-base-uncased](https://huggingface.co/HooshvareLab/bert-fa-base-uncased) 
+
+#### ParsBERT v2.0 Sentiment Analysis
+- [HooshvareLab/bert-fa-base-uncased-sentiment-digikala](https://huggingface.co/HooshvareLab/bert-fa-base-uncased-sentiment-digikala) 
+- [HooshvareLab/bert-fa-base-uncased-sentiment-snappfood](https://huggingface.co/HooshvareLab/bert-fa-base-uncased-sentiment-snappfood) 
+- [HooshvareLab/bert-fa-base-uncased-sentiment-deepsentipers-binary](https://huggingface.co/HooshvareLab/bert-fa-base-uncased-sentiment-deepsentipers-binary) 
+- [HooshvareLab/bert-fa-base-uncased-sentiment-deepsentipers-multi](https://huggingface.co/HooshvareLab/bert-fa-base-uncased-sentiment-deepsentipers-multi) 
+
+#### ParsBERT v2.0 Text Classification
+- [HooshvareLab/bert-fa-base-uncased-clf-digimag](https://huggingface.co/HooshvareLab/bert-fa-base-uncased-clf-digimag) 
+- [HooshvareLab/bert-fa-base-uncased-clf-persiannews](https://huggingface.co/HooshvareLab/bert-fa-base-uncased-clf-persiannews) 
+
+#### ParsBERT v2.0 NER 
+- [HooshvareLab/bert-fa-base-uncased-ner-peyma](https://huggingface.co/HooshvareLab/bert-fa-base-uncased-ner-peyma) 
+- [HooshvareLab/bert-fa-base-uncased-ner-arman](https://huggingface.co/HooshvareLab/bert-fa-base-uncased-ner-arman) 
 
 
 ## NLP Tasks Tutorial  :hugs:
