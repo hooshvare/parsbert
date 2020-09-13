@@ -173,8 +173,8 @@ model = AutoModel.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
 |--------------------------|---------------------------------------------------------------------------------|
 | Text Classification      | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hooshvare/parsbert/blob/master/notebooks/Taaghche_Sentiment_Analysis.ipynb) |
 | Sentiment Analysis       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hooshvare/parsbert/blob/master/notebooks/Taaghche_Sentiment_Analysis.ipynb) |
-| Named Entity Recognition | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](#) |
-| Text Generation          | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](#) |
+| Named Entity Recognition |  |
+| Text Generation          |  |
 
 
 ## Cite 
