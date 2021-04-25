@@ -59,8 +59,6 @@ As a part of ParsBERT methodology, an extensive pre-processing combining POS tag
 
 [![ParsBERT Demo](/assets/parsbert-playground.png)](https://www.youtube.com/watch?v=Fyirkq668PE)
 
-[ParsBERT Playground](http://lab.hooshvare.com/)
-
 
 ## Evaluation
 
