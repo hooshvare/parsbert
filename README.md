@@ -146,6 +146,8 @@ model = AutoModel.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
 ## Derivative models
 
 ### Base Config
+#### ParsBert V3.0 Model
+- [HooshvareLab/bert-fa-zwnj-base](https://huggingface.co/HooshvareLab/bert-fa-zwnj-base)
 
 #### ParsBERT v2.0 Model
 - [HooshvareLab/bert-fa-base-uncased](https://huggingface.co/HooshvareLab/bert-fa-base-uncased) 
