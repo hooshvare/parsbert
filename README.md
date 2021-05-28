@@ -4,36 +4,7 @@ ParsBERT is a monolingual language model based on Google’s BERT architecture. 
 
 Paper presenting ParsBERT: [arXiv:2005.12515](https://arxiv.org/abs/2005.12515)
 
-
-## Table of contents
-- [ParsBERT: Transformer-based Model for Persian Language Understanding](#parsbert-transformer-based-model-for-persian-language-understanding)
-  - [Table of contents](#table-of-contents)
-  - [Donation - حمایت مالی](#donation---حمایت-مالی)
-  - [Introduction](#introduction)
-  - [Evaluation](#evaluation)
-  - [Results](#results)
-    - [Sentiment Analysis (SA) task](#sentiment-analysis-sa-task)
-    - [Text Classification (TC) task](#text-classification-tc-task)
-    - [Named Entity Recognition (NER) Task](#named-entity-recognition-ner-task)
-  - [How to use](#how-to-use)
-    - [TensorFlow 2.0](#tensorflow-20)
-    - [Pytorch](#pytorch)
-  - [Derivative models](#derivative-models)
-    - [Base Config](#base-config)
-      - [ParsBERT v2.0 Model](#parsbert-v20-model)
-      - [ParsBERT v2.0 Sentiment Analysis](#parsbert-v20-sentiment-analysis)
-      - [ParsBERT v2.0 Text Classification](#parsbert-v20-text-classification)
-      - [ParsBERT v2.0 NER](#parsbert-v20-ner)
-  - [NLP Tasks Tutorial  :hugs:](#nlp-tasks-tutorial-hugs)
-  - [Cite](#cite)
-  - [Acknowledgments](#acknowledgments)
-  - [Contributors](#contributors)
-  - [Releases](#releases)
-    - [v2.0 (2020-09-05)](#v20-2020-09-05)
-    - [v1.1 (2020-06-24)](#v11-2020-06-24)
-    - [v1.0 (2020-05-27)](#v10-2020-05-27)
-  - [License](#license)
-  - [Sponsors - همصداهایی که در این مسیر ما را حمایت کردند](#sponsors---همصداهایی-که-در-این-مسیر-ما-را-حمایت-کردند)
+**CURRENT VERSION: V3**
 
 
 ## Donation - حمایت مالی
@@ -59,7 +30,7 @@ As a part of ParsBERT methodology, an extensive pre-processing combining POS tag
 
 [![ParsBERT Demo](/assets/parsbert-playground.png)](https://www.youtube.com/watch?v=Fyirkq668PE)
 
-[ParsBERT Playground](http://lab.hooshvare.com/)
+<strike><a href="http://lab.hooshvare.com/">ParsBERT Playground</a></strike>
 
 
 ## Evaluation
@@ -73,81 +44,66 @@ The following table summarizes the F1 score obtained by ParsBERT as compared to 
 
 ### Sentiment Analysis (SA) task
 
-|          Dataset         | ParsBERT v2 | ParsBERT v1 | mBERT | DeepSentiPers |
-|:------------------------:|:-----------:|:-----------:|:-----:|:-------------:|
-|  Digikala User Comments  |    81.72    |    81.74*   | 80.74 |       -       |
-|  SnappFood User Comments |    87.98    |    88.12*   | 87.87 |       -       |
-|  SentiPers (Multi Class) |    71.31*   |    71.11    |   -   |     69.33     |
-| SentiPers (Binary Class) |    92.42*   |    92.13    |   -   |     91.98     |
+|          Dataset         | ParsBERT v3 | ParsBERT v2 | ParsBERT v1 | mBERT | DeepSentiPers |
+|:------------------------:|:-----------:|:-----------:|:-----------:|:-----:|:-------------:|
+|  Digikala User Comments  |      -      |    81.72    |    81.74*   | 80.74 |       -       |
+|  SnappFood User Comments |      -      |    87.98    |    88.12*   | 87.87 |       -       |
+|  SentiPers (Multi Class) |      -      |    71.31*   |    71.11    |   -   |     69.33     |
+| SentiPers (Binary Class) |      -      |    92.42*   |    92.13    |   -   |     91.98     |
 
 
 
 ### Text Classification (TC) task
 
-|      Dataset      | ParsBERT v2 | ParsBERT v1 | mBERT |
-|:-----------------:|:-----------:|:-----------:|:-----:|
-| Digikala Magazine |    93.65*   |    93.59    | 90.72 |
-|    Persian News   |    97.44*   |    97.19    | 95.79 |
+|      Dataset      | ParsBERT v3 | ParsBERT v2 | ParsBERT v1 | mBERT |
+|:-----------------:|:-----------:|:-----------:|:-----------:|:-----:|
+| Digikala Magazine |      -      |    93.65*   |    93.59    | 90.72 |
+|    Persian News   |      -      |    97.44*   |    97.19    | 95.79 |
 
 
 ### Named Entity Recognition (NER) Task
 
-| Dataset | ParsBERT v2 | ParsBERT v1 | mBERT | MorphoBERT | Beheshti-NER | LSTM-CRF | Rule-Based CRF | BiLSTM-CRF |
-|:-------:|:-----------:|:-----------:|:-----:|:----------:|:------------:|:--------:|:--------------:|:----------:|
-|  PEYMA  |    93.40*   |    93.10    | 86.64 |      -     |     90.59    |     -    |      84.00     |      -     |
-|  ARMAN  |    99.84*   |    98.79    | 95.89 |    89.9    |     84.03    |   86.55  |        -       |    77.45   |
+| Dataset | ParsBERT v3 | ParsBERT v2 | ParsBERT v1 | mBERT | MorphoBERT | Beheshti-NER | LSTM-CRF | Rule-Based CRF | BiLSTM-CRF |
+|:-------:|:-----------:|:-----------:|:-----------:|:-----:|:----------:|:------------:|:--------:|:--------------:|:----------:|
+|  PEYMA  |             |    93.40*   |    93.10    | 86.64 |      -     |     90.59    |     -    |      84.00     |      -     |
+|  ARMAN  |             |    99.84*   |    98.79    | 95.89 |    89.9    |     84.03    |   86.55  |        -       |    77.45   |
 
-
-**If you tested ParsBERT on a public dataset and you want to add your results to the table above, open a pull request or contact us. Also make sure to have your code available online so we can add it as a reference**
+**If you tested ParsBERT on a public dataset, and you want to add your results to the table above, open a pull request or contact us. Also make sure to have your code available online so we can add it as a reference**
 
 ## How to use
 
-### TensorFlow 2.0
-
 ```python
-from transformers import AutoConfig, AutoTokenizer, TFAutoModel
+from transformers import AutoConfig, AutoTokenizer, AutoModel, TFAutoModel
 
-# v2.0
-config = AutoConfig.from_pretrained("HooshvareLab/bert-fa-base-uncased")
-tokenizer = AutoTokenizer.from_pretrained("HooshvareLab/bert-fa-base-uncased")
-model = TFAutoModel.from_pretrained("HooshvareLab/bert-fa-base-uncased")
+# v3.0
+model_name_or_path = "HooshvareLab/bert-fa-zwnj-base"
+config = AutoConfig.from_pretrained(model_name_or_path)
+tokenizer = AutoTokenizer.from_pretrained(model_name_or_path)
 
-text = "ما در هوشواره معتقدیم با انتقال صحیح دانش و آگاهی، همه افراد میتوانند از ابزارهای هوشمند استفاده کنند. شعار ما هوش مصنوعی برای همه است."
+# model = TFAutoModel.from_pretrained(model_name_or_path)  For TF
+model = AutoModel.from_pretrained(model_name_or_path)
+
+text = "ما در هوش‌واره معتقدیم با انتقال صحیح دانش و آگاهی، همه افراد میتوانند از ابزارهای هوشمند استفاده کنند. شعار ما هوش مصنوعی برای همه است."
 tokenizer.tokenize(text)
 
->>> ['ما', 'در', 'هوش', '##واره', 'معتقدیم', 'با', 'انتقال', 'صحیح', 'دانش', 'و', 'اگاهی', '،', 'همه', 'افراد', 'میتوانند', 'از', 'ابزارهای', 'هوشمند', 'استفاده', 'کنند', '.', 'شعار', 'ما', 'هوش', 'مصنوعی', 'برای', 'همه', 'است', '.']
-
-
-# v1.0
-config = AutoConfig.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
-tokenizer = AutoTokenizer.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
-model = TFAutoModel.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
-
-text = "ما در هوشواره معتقدیم با انتقال صحیح دانش و آگاهی، همه افراد میتوانند از ابزارهای هوشمند استفاده کنند. شعار ما هوش مصنوعی برای همه است."
-tokenizer.tokenize(text)
-
->>> ['ما', 'در', 'هوش', '##واره', 'معتقدیم', 'با', 'انتقال', 'صحیح', 'دانش', 'و', 'اگاهی', '،', 'همه', 'افراد', 'میتوانند', 'از', 'ابزارهای', 'هوشمند', 'استفاده', 'کنند', '.', 'شعار', 'ما', 'هوش', 'مصنوعی', 'برای', 'همه', 'است', '.']
-```
-
-### Pytorch
-
-```python
-from transformers import AutoConfig, AutoTokenizer, AutoModel
-
-# v2.0
-config = AutoConfig.from_pretrained("HooshvareLab/bert-fa-base-uncased")
-tokenizer = AutoTokenizer.from_pretrained("HooshvareLab/bert-fa-base-uncased")
-model = AutoModel.from_pretrained("HooshvareLab/bert-fa-base-uncased")
-
-# v1.0
-config = AutoConfig.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
-tokenizer = AutoTokenizer.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
-model = AutoModel.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
+['ما', 'در', 'هوش', '[ZWNJ]', 'واره', 'معتقدیم', 'با', 'انتقال', 'صحیح', 'دانش', 'و', 'آ', '##گاهی', '،', 'همه', 'افراد', 'میتوانند', 'از', 'ابزارهای', 'هوشمند', 'استفاده', 'کنند', '.', 'شعار', 'ما', 'هوش', 'مصنوعی', 'برای', 'همه', 'است', '.']
 ```
 
 ## Derivative models
 
-### Base Config
+### V3.0
+
+#### BERT v3.0 Model
+- [HooshvareLab/bert-fa-zwnj-base](https://huggingface.co/HooshvareLab/bert-fa-zwnj-base) 
+
+#### DistilBERT v3.0 Model
+- [HooshvareLab/distilbert-fa-zwnj-base](https://huggingface.co/HooshvareLab/distilbert-fa-zwnj-base) 
+
+#### ALBERT v3.0 Model
+- [HooshvareLab/albert-fa-zwnj-base-v2](https://huggingface.co/HooshvareLab/albert-fa-zwnj-base-v2) 
+
+
+### V2.0
 
 #### ParsBERT v2.0 Model
 - [HooshvareLab/bert-fa-base-uncased](https://huggingface.co/HooshvareLab/bert-fa-base-uncased) 
@@ -165,6 +121,16 @@ model = AutoModel.from_pretrained("HooshvareLab/bert-base-parsbert-uncased")
 #### ParsBERT v2.0 NER 
 - [HooshvareLab/bert-fa-base-uncased-ner-peyma](https://huggingface.co/HooshvareLab/bert-fa-base-uncased-ner-peyma) 
 - [HooshvareLab/bert-fa-base-uncased-ner-arman](https://huggingface.co/HooshvareLab/bert-fa-base-uncased-ner-arman) 
+
+### V1.0
+
+#### ParsBERT v1.0 Model
+- [HooshvareLab/bert-base-parsbert-uncased](https://huggingface.co/HooshvareLab/bert-base-parsbert-uncased) 
+
+#### ParsBERT v1.0 NER 
+- [HooshvareLab/bert-base-parsbert-peymaner-uncased](https://huggingface.co/HooshvareLab/bert-base-parsbert-peymaner-uncased) 
+- [HooshvareLab/bert-base-parsbert-armanner-uncased](https://huggingface.co/HooshvareLab/bert-base-parsbert-armanner-uncased) 
+- [HooshvareLab/bert-base-parsbert-ner-uncased](https://huggingface.co/HooshvareLab/bert-base-parsbert-ner-uncased) 
 
 
 ## NLP Tasks Tutorial  :hugs:
@@ -205,6 +171,14 @@ We hereby, express our gratitude to the [Tensorflow Research Cloud (TFRC) progra
 - Hooshvare Team:  [Official Website](https://hooshvare.com/), [Linkedin](https://www.linkedin.com/company/hooshvare), [Twitter](https://twitter.com/hooshvare), [Github](https://github.com/hooshvare), [Instagram](https://www.instagram.com/hooshvare/)
 
 ## Releases
+
+### v3.0 (2021-02-28)
+The new version of BERT v3.0 for Persian is available today and can tackle the zero-width non-joiner character for Persian writing. 
+Also, the model was trained on new multi-types corpora with a new set of vocabulary.
+
+Available by: [HooshvareLab/bert-fa-zwnj-base](https://huggingface.co/HooshvareLab/bert-fa-zwnj-base)
+
+
 
 ### v2.0 (2020-09-05)
 ParsBERT v2.0: We reconstructed the vocabulary and fine-tuned the ParsBERT v1.1 on the new Persian corpora in order to provide some functionalities for using ParsBERT in other scopes!
