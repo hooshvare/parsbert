@@ -149,11 +149,10 @@ tokenizer.tokenize(text)
 
 ## Cite 
 
-Please cite the following paper in your publication if you are using [ParsBERT](https://arxiv.org/abs/2005.12515) in your research:
+Please cite the following paper in your publication if you are using [ParsBERT](https://doi.org/10.1007/s11063-021-10528-4) in your research:
 
 ```bibtex
- @article{
-    ParsBERT, 
+ @article{ParsBERT, 
     title={Parsbert: Transformer-based model for Persian language understanding}, 
     DOI={10.1007/s11063-021-10528-4}, 
     journal={Neural Processing Letters}, 
