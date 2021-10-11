@@ -5,7 +5,8 @@
 
 ParsBERT is a monolingual language model based on Google’s BERT architecture. This model is pre-trained on large Persian corpora with various writing styles from numerous subjects (e.g., scientific, novels, news) with more than `3.9M` documents, `73M` sentences, and `1.3B` words. 
 
-Paper presenting ParsBERT: [arXiv:2005.12515](https://arxiv.org/abs/2005.12515)
+<!-- Paper presenting ParsBERT: [arXiv:2005.12515](https://arxiv.org/abs/2005.12515) -->
+Paper presenting ParsBERT: [DOI: 10.1007/s11063-021-10528-4](https://doi.org/10.1007/s11063-021-10528-4)
 
 **CURRENT VERSION: V3**
 
@@ -150,14 +151,15 @@ tokenizer.tokenize(text)
 
 Please cite the following paper in your publication if you are using [ParsBERT](https://arxiv.org/abs/2005.12515) in your research:
 
-```markdown
-@article{ParsBERT,
-    title={ParsBERT: Transformer-based Model for Persian Language Understanding},
-    author={Mehrdad Farahani, Mohammad Gharachorloo, Marzieh Farahani, Mohammad Manthouri},
-    journal={ArXiv},
-    year={2020},
-    volume={abs/2005.12515}
-}
+```bibtex
+ @article{
+    ParsBERT, 
+    title={Parsbert: Transformer-based model for Persian language understanding}, 
+    DOI={10.1007/s11063-021-10528-4}, 
+    journal={Neural Processing Letters}, 
+    author={Mehrdad Farahani, Mohammad Gharachorloo, Marzieh Farahani, Mohammad Manthouri}, 
+    year={2021}
+} 
 ```
 
 ## Acknowledgments
