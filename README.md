@@ -238,5 +238,3 @@ Available by: [HooshvareLab/bert-base-parsbert-uncased](https://huggingface.co/H
 ## License
 
 [Apache License 2.0](LICENSE)
-
-## Sponsors - همصداهایی که در این مسیر ما را حمایت کردند 
