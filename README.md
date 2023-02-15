@@ -106,6 +106,9 @@ tokenizer.tokenize(text)
 #### ALBERT v3.0 Model
 - [HooshvareLab/albert-fa-zwnj-base-v2](https://huggingface.co/HooshvareLab/albert-fa-zwnj-base-v2) 
 
+#### ROBERTA v3.0 Model
+- [HooshvareLab/roberta-fa-zwnj-base](https://huggingface.co/HooshvareLab/roberta-fa-zwnj-base) 
+
 
 ### V2.0
 
